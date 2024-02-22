@@ -1,9 +1,9 @@
-let featuedImg = document.getElementById("featured-image");
+let featuredImg = document.getElementById("featured-image");
 let smallImgs = document.getElementsByClassName("small-Img");
 
 for (let i = 0; i < smallImgs.length; i++) {
   smallImgs[i].addEventListener("click", () => {
-    featuedImg.src = smallImgs[i].src;
+    featuredImg.src = smallImgs[i].src;
     // Remove 'sm-card' class from all small images
     for (let j = 0; j < smallImgs.length; j++) {
       smallImgs[j].classList.remove("sm-card");
@@ -12,13 +12,43 @@ for (let i = 0; i < smallImgs.length; i++) {
     smallImgs[i].classList.add("sm-card");
   });
 }
-// Assuming you have a JSON file named product-data.json containing your product data.
+
+// Get references to HTML elements
+var decrementBtn = document.getElementById("decrement");
+var incrementBtn = document.getElementById("increment");
+var quantityLabel = document.getElementById("quantity");
+
+// Initialize quantity value
+var quantity = 1;
+
+// Decrement button click event listener
+decrementBtn.addEventListener("click", function () {
+  if (quantity > 1) {
+    quantity--;
+    quantityLabel.textContent = quantity;
+  }
+});
+
+// Increment button click event listener
+incrementBtn.addEventListener("click", function () {
+  quantity++;
+  quantityLabel.textContent = quantity;
+});
+
+const btn = document.querySelector("button");
+
+btn.addEventListener("click", function () {
+  // Display cart message
+  var cartMessage = document.getElementById("cart-message");
+  cartMessage.innerHTML = "Product added to cart!";
+  cartMessage.style.display = "block";
+});
 
 // JavaScript code to fetch product data
+const API_DATA =
+  "https://cdn.shopify.com/s/files/1/0564/3685/0790/files/singleProduct.json?v=1701948";
 
-fetch(
-  "https://cdn.shopify.com/s/files/1/0564/3685/0790/files/singleProduct.json?v=1701948448"
-)
+fetch(API_DATA)
   .then((response) => response.json())
   .then((data) => {
     // Once data is fetched successfully, you can use it to update the HTML content
