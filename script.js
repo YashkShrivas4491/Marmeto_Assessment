@@ -1,15 +1,15 @@
 let featuredImg = document.getElementById("featured-image");
-let smallImgs = document.getElementsByClassName("small-Img");
+let smallImg = document.getElementsByClassName("small-Img");
 
-for (let i = 0; i < smallImgs.length; i++) {
-  smallImgs[i].addEventListener("click", () => {
-    featuredImg.src = smallImgs[i].src;
+for (let i = 0; i < smallImg.length; i++) {
+  smallImg[i].addEventListener("click", () => {
+    featuredImg.src = smallImg[i].src;
     // Remove 'sm-card' class from all small images
-    for (let j = 0; j < smallImgs.length; j++) {
-      smallImgs[j].classList.remove("sm-card");
+    for (let j = 0; j < smallImg.length; j++) {
+      smallImg[j].classList.remove("sm-card");
     }
     // Add 'sm-card' class to the clicked small image
-    smallImgs[i].classList.add("sm-card");
+    smallImg[i].classList.add("sm-card");
   });
 }
 
