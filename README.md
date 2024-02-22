@@ -5,13 +5,14 @@ Deployment link 🔗 : https://yashkshrivas4491.github.io/Marmeto_Assessment/
 # Product Details Page
 
 This is a sample README.md file describing the Product Details page.
+- Note: The API for Images is not working, so I manually added the IMG, and the rest of the things are working.
 
 ## Features
 
 - Display product images with thumbnails.
 - Show product vendor, title, price, compare at price, and discount percentage.
 - Color, size, and quantity selectors.
-- Show color name on hover like yellow , green  etc;
+- Show color names on hover like yellow, green,  etc;
 - Add to cart functionality with a cart message.
 
 ## Technologies Used
@@ -20,11 +21,19 @@ This is a sample README.md file describing the Product Details page.
 - CSS
 - JavaScript
 
-## How to Use
 
-1. Clone this repository.
-2. Open `index.html` in your web browser.
-3. Explore the product details page.
+## Explore the Structure:
+Take a moment to review the project structure:
+
+        project-root/
+        |-- index.html
+        |-- style.css
+        |-- script.js
+        |-- README.md
+- `index.html`: Main HTML file for your project.
+- `style.css`: CSS file for styling.
+- `script.js`: JavaScript file for scripting logic.
+- `README.md`: Documentation for your project.
 
 ## Screenshots
 
