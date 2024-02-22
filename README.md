@@ -1,6 +1,6 @@
 # Marmeto L2 Assessment
 
-Deployment link 🔗 : https://yashkshrivas4491.github.io/Marmeto_Assessment/ 
+Deployment link 🔗 : [https://yashkshrivas4491.github.io/Marmeto_Assessment/ ](https://yashkshrivas4491.github.io/Marmeto_Assessment/)
 
 # Product Details Page
 
